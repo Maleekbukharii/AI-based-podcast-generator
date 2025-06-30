@@ -1,0 +1,23 @@
+[project]
+name = "contextagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Maleekbukharii", email = "maleekbukhari@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "ffmpeg>=1.4",
+    "openai-agents>=0.0.19",
+    "openai-whisper>=20250625",
+    "pydub>=0.25.1",
+]
+
+[project.scripts]
+contextagent = "contextagent:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
